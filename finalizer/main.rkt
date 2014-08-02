@@ -1,7 +1,7 @@
 #lang racket/base
 (require racket/contract)
 (provide/contract 
- [register-finalizer (-> any/c (-> any/c any))])
+ [register-finalizer (-> any/c (-> any/c any) any)])
 
 (define will (make-will-executor))
 
