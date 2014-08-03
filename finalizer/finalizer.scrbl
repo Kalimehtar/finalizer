@@ -8,5 +8,6 @@
 @(defmodule finalizer)
 
 @defproc[(register-finalizer [object any/c] [proc (any/c . -> . any)]) void?]{
-Register finalize racket[_proc], that will be called, when racket[_object] is
-garbage collected. }
+Register finalize @racket[_proc], that will be called, when @racket[_object] is
+garbage collected. More details about @racket[_proc] see in the description 
+of @racket[will-register].}
